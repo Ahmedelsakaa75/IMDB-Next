@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
          
           <Link href={"/"} className="flex gap-1 items-center">
-            <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-md">
+            <span className="text-2xl text-black font-bold bg-amber-500 py-1 px-2 rounded-md">
               IMDb
             </span>
             <span className="text-xl hidden sm:inline">Clone</span>
