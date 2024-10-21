@@ -1,5 +1,5 @@
 import Results from '@/components/Results';
-import React from 'react'
+import React, { Suspense } from 'react'
 const api_key = process.env.API_KEY;
 
 export default async function Home({searchParams}) {
@@ -16,8 +16,10 @@ const genre = searchParams.genre || 'fetchTrending'
     const movies = data.results
 
   return (
+     <Suspense fallback={<div>Loading...</div>}>
     <div className="flex">
       <Results movies={movies} />
     </div>
+    </Suspense>  
   )
 }
